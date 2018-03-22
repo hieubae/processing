@@ -19,10 +19,16 @@ void draw() {
       fill(0, 255, 0);
     } else {
       if (isNear(mouseX, 285) && isNear(mouseY, 200)) {
-        fill(0, 255, 0);
-        println("YOU WON!!!");
+       
+                textSize(50);
+             fill(252,215,0);
+        text("Game Over", 25,100);
+ fill(0, 255, 0);
+        
+ 
       } else {
         fill(255, 0, 0);
+          
       }
      
     }
