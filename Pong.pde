@@ -1,11 +1,15 @@
 void setup() {
+  PImage backgroundImage;
   size(500, 500);
+  backgroundImage = loadImage("image.jpg");
 }
 int ballY = 250;
 int ballX = 250;
 int xSpeed = 5;
 int ySpeed = 5;
 void draw() {
+  image(backgroundImage, 0, 0);
+  image(backgroundImage, 0, 0, 
   background(0, 0, 0);
   ellipse(ballX,ballY, 50, 50);
   fill(255,255,255);
